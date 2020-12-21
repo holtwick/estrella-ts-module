@@ -1,0 +1,17 @@
+{
+  "name": "ts-module",
+  "version": "0.0.0",
+  "main": "dist/estrella-starter.cjs.js",
+  "module": "dist/estrella-starter.esm.js", 
+  "sideEffects": false,
+  "files": ["dist"],
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "./build.js -debug -watch -inline-sourcemap",
+    "build": "./build.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "estrella": "^1"
+  }
+}
